@@ -4,20 +4,23 @@
   "description": "A from scratch MEAN project",
   "main": "index.js",
   "scripts": {
-    "start" : "node app"
+    "start": "nodemon app"
   },
   "repository": "https://github.com/rossjcoop/MeanProject",
   "author": "Ross Cooper",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "express": "^4.16.4",
-    "mongoose": "*",
     "bcryptjs": "*",
-    "cors": "*",
-    "jsonwebtoken": "*",
     "body-parser": "*",
+    "cors": "*",
+    "express": "^4.16.4",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
     "passport": "*",
     "passport-jwt": "*"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
