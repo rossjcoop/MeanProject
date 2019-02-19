@@ -1,0 +1,23 @@
+{
+  "name": "MeanProject",
+  "version": "1.0.0",
+  "description": "A from scratch MEAN project",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node app"
+  },
+  "repository": "https://github.com/rossjcoop/MeanProject",
+  "author": "Ross Cooper",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  }
+}
