@@ -31,7 +31,7 @@ module.exports.getUserById = function(id, cb){
 }
 
 module.exports.getByUsername = function(username, cb){
-    const query = {username: username}
+    const query = {username: username};
     User.findOne(query, cb);
 }
 
@@ -43,4 +43,11 @@ module.exports.addUser = function(newUser, cb){
             newUser.save(cb);
         })
     })
+}
+
+module.exports.comparePassword = function(candidatePassword, hash, cb){
+    bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
+        if(err) throw err;
+        cb(null, isMatch);
+    });
 }
